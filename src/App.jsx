@@ -739,7 +739,7 @@ function PricingPage({ setPage }) {
 
       {/* Plan cards */}
       <section style={{ maxWidth: 1280, margin: "0 auto", padding: "0 48px 100px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, alignItems: "start" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, alignItems: "stretch" }}>
           {plans.map((plan, i) => (
             <div key={i} style={{ background: plan.gradient, borderRadius: 24, padding: "40px 32px", border: plan.highlight ? "1px solid rgba(74,222,128,0.3)" : "1px solid rgba(255,255,255,0.06)", position: "relative", overflow: "hidden" }}>
               {plan.highlight && (
